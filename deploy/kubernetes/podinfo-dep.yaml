@@ -3,6 +3,8 @@ apiVersion: v1
 kind: Deployment
 metadata:
   name: podinfo
+  annotations:
+    flux.weave.works/automated: 'true'
 spec:
   replicas: 1
   template:
